@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NewFoyerController">
+   <children>
+      <ImageView fitHeight="546.0" fitWidth="975.0">
+         <image>
+            <Image url="@smart-city.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableFoyer" layoutX="125.0" opacity="0.8" prefHeight="339.0" prefWidth="852.0">
+        <columns>
+          <TableColumn fx:id="cidFoyer" prefWidth="100.0" text="ID_FOYER" />
+          <TableColumn fx:id="cidCH" prefWidth="92.0" text="CHARGE_HYGIENE" />
+            <TableColumn fx:id="cNombreindividu" prefWidth="117.0" text="NBRE RESIDENT" />
+            <TableColumn fx:id="cQuartier" prefWidth="99.0" text="QUARTIER" />
+            <TableColumn fx:id="cQteDechetOrg" prefWidth="100.0" text="DECHET ORGANIQ" />
+            <TableColumn fx:id="cQteDechetPlast" prefWidth="100.0" text="DECHET PLASTIQUES" />
+            <TableColumn fx:id="cQteDechetAutre" prefWidth="102.0" text="AUTRE DECHETS" />
+            <TableColumn fx:id="cDateRamassage" prefWidth="141.0" text="DATE RAMASSAGE" />
+        </columns>
+      </TableView>
+      <Button layoutX="32.0" layoutY="14.0" mnemonicParsing="false" onAction="#RetourAdminSup" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: white;" text="RETOUR" textFill="#f80e0e">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="Searcharge" layoutX="90.0" layoutY="408.0" opacity="0.51" prefHeight="25.0" prefWidth="182.0" promptText="RECHERCHE CHARGE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Button defaultButton="true" layoutX="136.0" layoutY="455.0" mnemonicParsing="false" onAction="#RechercherCharge" opacity="0.77" prefHeight="39.0" prefWidth="136.0" style="-fx-background-color: gray; -fx-background-radius: 52px;" text="Rechercher" textFill="#f20c0c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button defaultButton="true" layoutX="390.0" layoutY="408.0" mnemonicParsing="false" onAction="#New" opacity="0.77" prefHeight="32.0" prefWidth="105.0" style="-fx-background-color: gray; -fx-background-radius: 52px;" text="NEW" textFill="#f20c0c" />
+      <Button defaultButton="true" layoutX="537.0" layoutY="408.0" mnemonicParsing="false" onAction="#supprimer" opacity="0.77" prefHeight="32.0" prefWidth="105.0" style="-fx-background-color: gray; -fx-background-radius: 52px;" text="DELETE" textFill="#f20c0c" />
+      <Button defaultButton="true" layoutX="658.0" layoutY="408.0" mnemonicParsing="false" onAction="#actualiser2" opacity="0.77" prefHeight="32.0" prefWidth="105.0" style="-fx-background-color: gray; -fx-background-radius: 52px;" text="ACTUALISER" textFill="#f20c0c" />
+      <Button defaultButton="true" layoutX="390.0" layoutY="478.0" mnemonicParsing="false" onAction="#reinitialiser" opacity="0.77" prefHeight="32.0" prefWidth="105.0" style="-fx-background-color: gray; -fx-background-radius: 52px;" text="REINITIALISER" textFill="#f20c0c" />
+   </children>
+</AnchorPane>
